@@ -10,7 +10,7 @@ resource "aws_subnet" "main" {
 #creating route table
 resource "aws_route_table" "rt" {
 
-  vpc_id     = "vpc-00bf0d10a6a41600c"
+  vpc_id     = "nat-0d688bbff8a47b274"
   route {
 
         cidr_block = "0.0.0.0/0"
