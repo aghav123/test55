@@ -7,15 +7,7 @@ resource "aws_subnet" "main" {
   }
 }
 
-resource "aws_route_table" "example" {
-   vpc_id     = "vpc-00bf0d10a6a41600c"
 
-  route = []
-
-  tags = {
-    Name = "route table"
-  }
-}
 
 terraform {
   backend "s3" {
