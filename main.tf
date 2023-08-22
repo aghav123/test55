@@ -3,7 +3,7 @@ resource "aws_subnet" "main" {
   cidr_block = "10.0.120.0/24"
 
   tags = {
-    Name = "Main"
+    Name = "private subnet"
   }
 }
 
@@ -15,6 +15,6 @@ resource "aws_route_table" "example" {
   route = []
 
   tags = {
-    Name = "example"
+    Name = "route table"
   }
 }
