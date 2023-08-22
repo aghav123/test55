@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("TF Init"){
             steps{
-                sh 'terraform init'
+                sh 'terraform init -force-copy'
                 echo "Executing Terraform Init"
             }
         }
@@ -21,7 +21,7 @@ pipeline{
         }
         stage("TF Apply"){
             steps{
-                sh 'terraform apply'
+                sh 'terraform apply -auto-approve'
                 echo "Executing Terraform Apply"
             }
         }
