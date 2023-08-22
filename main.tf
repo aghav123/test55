@@ -7,7 +7,7 @@ resource "aws_subnet" "main" {
   }
 }
 
-creating route table
+#creating route table
 resource "aws_route_table" "rt" {
 
   vpc_id     = "vpc-00bf0d10a6a41600c"
