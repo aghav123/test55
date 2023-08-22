@@ -7,13 +7,7 @@ resource "aws_subnet" "main" {
   }
 }
 
-terraform {
-  backend "s3" {
-    bucket = "3.devops.candidate.exam"
-    key    = "karan.aghav"
-    region = "ap-south-1"
-  }
-}
+
 
 resource "aws_route_table" "route" {
    vpc_id     = "vpc-00bf0d10a6a41600c"
