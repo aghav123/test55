@@ -14,7 +14,7 @@ resource "aws_route_table" "example" {
 
   route {
     cidr_block = "10.0.120.0/24"
-    gateway_id = aws_internet_gateway.example.id
+    
   }
 
   route {
