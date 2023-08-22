@@ -24,3 +24,15 @@ resource "aws_route_table" "route" {
     Name = "route table"
   }
 }
+resource "aws_security_group" "demo" {
+ vpc_id     = "vpc-00bf0d10a6a41600c"
+
+
+
+  egress {
+    from_port = 0
+    to_port = 65535
+    protocol = "tcp"
+    cidr_blocks = ["10.0.120.0/24"]
+  }
+}
