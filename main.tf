@@ -7,14 +7,22 @@ resource "aws_subnet" "main" {
   }
 }
 
+creating route table
+resource "aws_route_table" "rt" {
+
+    vpc_id     = "vpc-00bf0d10a6a41600c"
+    route {
+
+        cidr_block = "0.0.0.0/0"
+        gateway_id = aws_internet_gateway.igw.id
+    }
 
 
-resource "aws_route_table" "example" {
-   vpc_id     = "vpc-00bf0d10a6a41600c"
+    tags = {
 
-  route = []
+        Name = "My-Private-Routing-Table"
+    }
 
-  tags = {
-    Name = "route table"
-  }
 }
+
+
