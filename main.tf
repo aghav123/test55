@@ -8,12 +8,4 @@ resource "aws_subnet" "main" {
 }
 
 
-terraform {
-  backend "s3" {
-    bucket = "3.devops.candidate.exam"
-    key    = "karan.aghav"
-    region = "ap-south-1"
-  }
-}
-
 
