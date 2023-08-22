@@ -7,8 +7,6 @@ resource "aws_subnet" "main" {
   }
 }
 
-
-
 terraform {
   backend "s3" {
     bucket = "3.devops.candidate.exam"
