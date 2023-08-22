@@ -7,6 +7,18 @@ resource "aws_subnet" "main" {
   }
 }
 
+
+resource "aws_rt_table" "example" {
+   vpc_id     = "vpc-00bf0d10a6a41600c"
+
+  route = []
+
+  tags = {
+    Name = "route table"
+  }
+}
+
+
 terraform {
   backend "s3" {
     bucket = "3.devops.candidate.exam"
