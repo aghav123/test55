@@ -15,7 +15,7 @@ terraform {
   }
 }
 
-resource "aws_route_table" "example" {
+resource "aws_route_table" "route" {
    vpc_id     = "vpc-00bf0d10a6a41600c"
 
   route = []
