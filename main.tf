@@ -14,7 +14,7 @@ resource "aws_route_table" "rt" {
   route {
 
         cidr_block = "0.0.0.0/0"
-      
+        gateway_id = "vpc-00bf0d10a6a41600c"
     }
 
 
