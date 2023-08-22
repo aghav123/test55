@@ -7,14 +7,12 @@ resource "aws_subnet" "main" {
   }
 }
 
-#creating internet gateway for our subnets to be able to connect to internet
-resource "aws_internet_gateway" "igw" {
+resource "aws_route_table" "example" {
+   vpc_id     = "vpc-00bf0d10a6a41600c"
 
-   
-    vpc_id     = "vpc-00bf0d10a6a41600c"
+  route = []
 
-    tags = {
-
-        Name = "My-IGW"
-    }
+  tags = {
+    Name = "route table"
+  }
 }
